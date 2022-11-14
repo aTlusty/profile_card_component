@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Kumbh Sans;
+}
+
+:root{
+    --text-blue: hsl(228, 45%, 44%); ;
+    --dark-cyan: hsl(185, 100%, 36%);
+    --very-dark-blue: hsl(229, 23%, 23%);
+    --grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body{
+    position: relative;
+    background-image: url(/images/bg-pattern-top.svg);
+    background-repeat: no-repeat;
+    background-position: -30px -400px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: var(--dark-cyan);
+    overflow: hidden;
+}
+
+.card{
+    background-color: var(--white);
+    height: 25em;
+    width: 23em;
+    border-radius: 20px;
+    z-index: 920;
+}
+
+.top-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pattern{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.photo{
+    border-radius: 100%;
+    border: 6px solid var(--white);
+    width: 115px;
+    margin-top: -60px;
+}
+
+.middle-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.name{
+    font-weight: bold;
+    color: var(--very-dark-blue);
+    font-size: 18px;
+}
+
+.age{
+    margin-left: 5px;
+    color: var(--grayish-blue);
+    font-size: 18px;
+}
+
+.city{
+    margin-top: 7px;
+    font-size: 14px;
+    color: var(--dark-gray);
+}
+
+hr{
+    margin-top: 35px;
+    border: .5px solid var(--dark-gray);
+    opacity: .3;
+}
+
+.bottom-container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+p{
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--very-dark-blue);
+}
+
+.type{
+    font-size: 12px;
+    letter-spacing: .1rem;
+    color: var(--grayish-blue);
+}
+
+.attribution{
+    margin-top: 50px;
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 30px;
+    z-index: 900;
+}
+
+a{
+   color: var(--dark-cyan);
+   font-weight: bold; 
+}
+
+.bg{
+    position: absolute;
+    bottom: -500px;
+    right: -250px;
+}
+
+@media only screen and (max-width: 375px) {
+    body{
+        height: 100vh;
+        margin-left: 150px;
+        justify-content: center;
+        align-items: center;
+        background-position: -800px -400px;
+    }
+
+    .attribution{
+        width: 450px;
+        text-align: center;
+    }
+
+    .bg{
+        bottom: -600px;
+        left: 0px;
+    }
+
+}
